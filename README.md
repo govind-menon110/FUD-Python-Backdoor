@@ -64,4 +64,12 @@ Note: The initial mail will be sent to you when you switch on the Keylogger. All
 
 4. `pwd` - Prints the Present Working Directory and does not take any arguments!
 
+### <a id="references" style="color: rgb(0,0,0)"><u>References</u></a>:
+Some links where you can setup a host machine to receive connections:
+1. <b>Option 1</b>: Use Cloud VMs - Cheap and effective way to get a public IP and a working machine in the cloud, accessible from anywhere. [For experimenting and legal activities it is perfectly fine. Please do not use the machine for illegal activities like spying on your boss, etc.]. Some examples: <a href="cloud.google.com">Google Cloud</a>, <a href="aws.amazon.com">AWS</a>, <a href="linode.com">Linode</a>, <a href="digitalocean.com">DigitalOcean</a>
+
+2. <b>Option 2</b>: Use Dynamic DNS. Find the <a href="https://www.noip.com/download">link</a> to configure it on your local machine. Put the static DNS name in place of the IP in `data.py`. Make sure the DNS client and your firewall allows incoming connections on the desired port.
+
+3. <b>Option 3</b>: Use Ngrok to open a tcp port into your local machine. Learn how to do that from the <a href="ngrok.com">official site</a>.
+
 You are all set. Have fun! Feel free to fork the repo and use it to further your knowledge. Please use it for research purposes and not indulge in unethical means!
