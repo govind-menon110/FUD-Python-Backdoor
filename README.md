@@ -1,3 +1,4 @@
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 # FUD-Python-Backdoor
 ### <b><u>Note</u></b>: The developer does not take responsibility for any actions undertaken by the individual using this application. Please do not upload on online virus checkers like `Virustotal`.
 ### <b>FUD as of April 26 2020</b>
